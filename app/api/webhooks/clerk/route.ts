@@ -10,7 +10,6 @@ export async function POST(req: Request) {
   // You can find this in the Clerk Dashboard -> Webhooks -> choose the webhook
   const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET
 
-  console.log('HereApi');
 
  
   if (!WEBHOOK_SECRET) {
@@ -57,10 +56,10 @@ export async function POST(req: Request) {
   
   const eventType = evt.type;
  
-  console.log('EventType', evt.type);
+ 
 
   if(eventType == 'user.created'){
-  console.log('EventData', evt.data);
+ 
 
     const { id, email_addresses, image_url, first_name, last_name, username } = evt.data;
 
