@@ -17,7 +17,7 @@ export type CreateUserParams = {
   
   // ====== EVENT PARAMS
   export type CreateEventParams = {
-    userId: string
+    userId: String
     event: {
       title: string
       description: string
@@ -34,7 +34,7 @@ export type CreateUserParams = {
   }
   
   export type UpdateEventParams = {
-    userId: string
+    userId: String
     event: {
       _id: string
       title: string
